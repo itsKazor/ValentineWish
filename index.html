@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>For You, Viona 💕</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="./img/heart.svg" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <!-- 🎵 MUSIC 1 - Lagu awal (intro sampai sebelum Happy Valentine) -->
+    <audio id="bgMusic1" loop>
+      <source src="img/music1.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- 🎵 MUSIC 2 - Lagu kedua (mulai saat Happy Valentine muncul) -->
+    <audio id="bgMusic2" loop>
+      <source src="img/music2.mp3" type="audio/mpeg" />
+    </audio>
+    <button class="music-toggle" id="musicToggle">🔇</button>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="container">
+      <div class="one">
+        <h1 class="one">
+          Hello,
+          <span id="name" class="name-glow">Viona</span>
+        </h1>
+        <p class="two" id="greetingText">Your name sounds like a melody to me 💕</p>
+      </div>
+      <div class="three">
+        <p>It's Valentine's Day! 💝</p>
+      </div>
+      <div class="four">
+        <div class="text-box">
+          <p class="hbd-chatbox">
+            Happy Valentine's Day! I made something special just for you... 💕
+          </p>
+          <p class="fake-btn">Send 💌</p>
+        </div>
+      </div>
+      <div class="five">
+        <p class="idea-1">That's what I was going to text you...</p>
+        <p class="idea-2">But then I paused.</p>
+        <p class="idea-3">
+          I realized, I wanted to do something <strong>different</strong>.
+        </p>
+        <p class="idea-4">Because...</p>
+        <p class="idea-5">
+          You are someone really special
+          <span>✨</span>
+        </p>
+        <p class="idea-6">
+          <span>S</span>
+          <span>O</span>
+        </p>
+      </div>
+      <div class="six">
+        <img src="img/giphy.gif" alt="For You" class="girl-dp" id="imagePath" />
+        <div class="wish">
+          <h3 class="wish-hbd">Happy Valentine's Day, Viona</h3>
+          <h5 id="wishText">You brighten up my days more than you'll ever know 💗</h5>
+        </div>
+      </div>
+      <div class="seven">
+        <div class="baloons">
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/smiling.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/music-note.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/heart.svg" />
+          <img src="img/music-note.svg" alt="" />
+          <img src="img/smiling.svg" />
+          <img src="img/happy.svg" alt="" />
+          <img src="img/balloon.svg" alt="" />
+          <img src="img/heart.svg" />
+          <img src="img/smiling.svg" />
+        </div>
+      </div>
+      <div class="eight">
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" />
+        </svg>
+      </div>
+      <div class="waguri-question">
+        <h2 class="waguri-text">Will you be my Waguri? 💕</h2>
+        <div class="waguri-buttons">
+          <button class="btn-yes" id="btnYes">Yes! 💖</button>
+          <button class="btn-no" id="btnNo">Hmm... 🤔</button>
+        </div>
+        <div class="waguri-response" id="waguri-response"></div>
+      </div>
+      <div class="dance-party">
+        <h2 class="dance-title">🎉 LET'S CELEBRATE! 🎉</h2>
+        <div class="dance-grid">
+          <img src="img/dance/dance1.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/dance2.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/dance3.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/aliendance.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/dance4.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/reze.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/milos.gif" alt="dance" class="dance-img" />
+          <img src="img/dance/waguri.png" alt="dance" class="dance-img" />
+        </div>
+      </div>
+      <div class="heart-section">
+        <img src="img/dance/subaru.gif" alt="Subaru" class="heart-img" />
+        <h2 class="heart-text">My Heart is Yours, Miss 💗</h2>
+      </div>
+      <div class="nine">
+        <p>Thank you for being you, Viona ✨</p>
+        <p id="replay">Click here to watch it again 💕</p>
+        <p class="last-smile">💗</p>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script type="text/babel" src="script/main.js"></script>
+</html>
